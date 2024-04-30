@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "goldenpolev2"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "projectnewworld:custom/kabuto",
+  "textures": {
+    "0": "projectnewworld:blocks/kabutoslingshot",
+    "particle": "projectnewworld:items/kabutoitem"
+  }
+}

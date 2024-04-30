@@ -1,0 +1,7 @@
+{
+  "parent": "projectnewworld:custom/goldenpole",
+  "textures": {
+    "0": "projectnewworld:blocks/goldenpole",
+    "particle": "projectnewworld:items/goldenpoleitem"
+  }
+}

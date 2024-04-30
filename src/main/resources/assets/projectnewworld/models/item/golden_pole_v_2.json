@@ -1,0 +1,7 @@
+{
+  "parent": "projectnewworld:custom/goldenpolev2",
+  "textures": {
+    "0": "projectnewworld:blocks/goldenpolev2",
+    "particle": "projectnewworld:items/goldenpolev2"
+  }
+}

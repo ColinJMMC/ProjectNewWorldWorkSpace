@@ -1,0 +1,7 @@
+{
+  "parent": "projectnewworld:custom/gryphon",
+  "textures": {
+    "0": "projectnewworld:blocks/gryphon",
+    "particle": "projectnewworld:items/gryphonitem"
+  }
+}
