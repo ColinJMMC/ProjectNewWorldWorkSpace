@@ -1,14 +1,20 @@
 {
   "itemGroup.tabpnw_armor": "PNW Armor",
+  "key.projectnewworld.jutsu_1": "Jutsu 1",
   "item.projectnewworld.lazer_arm_chestplate": "Lazer Arm",
+  "item.projectnewworld.sasuke_ms_chestplate": "Sasuke MS Body",
   "item.projectnewworld.lazer_arm_leggings": "Lazer Arm Leggings",
   "item.projectnewworld.popgreen": "Popgreen",
   "item.projectnewworld.golden_pole": "Golden Staff V1",
   "item.projectnewworld.golden_pole_v_2": "Golden Staff V2",
+  "item.projectnewworld.sasuke_ms_helmet": "Sasuke MS",
+  "effect.amaterasu": "Amaterasu",
   "item.projectnewworld.lazer_arm_boots": "Lazer Arm Boots",
   "itemGroup.tabpnw_weapons": "PNW Weapons",
+  "item.projectnewworld.sasuke_ms_boots": "Sasuke MS Boots",
   "item.projectnewworld.ussop_slingshot": "Kabuto",
   "item.projectnewworld.gryphon": "Gryphon",
   "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet",
-  "itemGroup.tabpnw_items": "PNW Items"
+  "itemGroup.tabpnw_items": "PNW Items",
+  "item.projectnewworld.sasuke_ms_leggings": "Sasuke MS Leggings"
 }

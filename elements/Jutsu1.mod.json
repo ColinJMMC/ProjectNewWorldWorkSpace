@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Jutsu 1",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "Jutsu1OnKeyPressed"
+    }
+  }
+}

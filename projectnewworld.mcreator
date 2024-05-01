@@ -183,6 +183,90 @@
       "locked_code": false,
       "registry_name": "pnw_items",
       "path": "~/CreativeTabs"
+    },
+    {
+      "name": "SasukeMS",
+      "type": "armor",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sasuke_ms",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "AmaterasuEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amaterasu_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "AmaterasuOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amaterasu_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Amaterasu",
+      "type": "potioneffect",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amaterasu",
+      "path": "~/Particles"
+    },
+    {
+      "name": "Jutsu1OnKeyPressed",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jutsu_1_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Jutsu1",
+      "type": "keybind",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jutsu_1",
+      "path": "~/Keybinds"
     }
   ],
   "variable_elements": [],
@@ -190,17 +274,23 @@
   "language_map": {
     "en_us": {
       "itemGroup.tabpnw_armor": "PNW Armor",
+      "key.projectnewworld.jutsu_1": "Jutsu 1",
       "item.projectnewworld.lazer_arm_chestplate": "Lazer Arm",
+      "item.projectnewworld.sasuke_ms_chestplate": "Sasuke MS Body",
       "item.projectnewworld.lazer_arm_leggings": "Lazer Arm Leggings",
       "item.projectnewworld.popgreen": "Popgreen",
       "item.projectnewworld.golden_pole": "Golden Staff V1",
       "item.projectnewworld.golden_pole_v_2": "Golden Staff V2",
+      "item.projectnewworld.sasuke_ms_helmet": "Sasuke MS",
+      "effect.amaterasu": "Amaterasu",
       "item.projectnewworld.lazer_arm_boots": "Lazer Arm Boots",
       "itemGroup.tabpnw_weapons": "PNW Weapons",
+      "item.projectnewworld.sasuke_ms_boots": "Sasuke MS Boots",
       "item.projectnewworld.ussop_slingshot": "Kabuto",
       "item.projectnewworld.gryphon": "Gryphon",
       "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet",
-      "itemGroup.tabpnw_items": "PNW Items"
+      "itemGroup.tabpnw_items": "PNW Items",
+      "item.projectnewworld.sasuke_ms_leggings": "Sasuke MS Leggings"
     }
   },
   "foldersRoot": {
@@ -224,6 +314,14 @@
       },
       {
         "name": "CreativeTabs",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Keybinds",
         "children": []
       }
     ]

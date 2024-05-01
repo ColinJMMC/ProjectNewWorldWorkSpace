@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "projectnewworld:items/1200px-mangekyou_sharingan_sasuke.svg"
+  }
+}
