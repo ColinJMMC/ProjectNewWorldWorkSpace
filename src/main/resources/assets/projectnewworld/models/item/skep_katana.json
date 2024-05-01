@@ -1,0 +1,7 @@
+{
+  "parent": "projectnewworld:custom/skepskatana",
+  "textures": {
+    "2": "projectnewworld:blocks/skepkatana",
+    "particle": "projectnewworld:items/skepkatanaitem"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "projectnewworld:custom/slashgryphon",
+  "textures": {
+    "0": "projectnewworld:blocks/gryphonslash",
+    "particle": "projectnewworld:items/gryphonslash"
+  }
+}

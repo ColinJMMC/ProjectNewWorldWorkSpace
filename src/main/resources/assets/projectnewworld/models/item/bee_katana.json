@@ -1,0 +1,7 @@
+{
+  "parent": "projectnewworld:custom/beeskatana",
+  "textures": {
+    "0": "projectnewworld:blocks/beekatana",
+    "particle": "projectnewworld:items/beekatana"
+  }
+}

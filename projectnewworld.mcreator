@@ -185,21 +185,6 @@
       "path": "~/CreativeTabs"
     },
     {
-      "name": "SasukeMS",
-      "type": "armor",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sasuke_ms",
-      "metadata": {
-        "eh": true,
-        "el": false,
-        "eb": false,
-        "ec": false
-      },
-      "path": "~/Armor"
-    },
-    {
       "name": "AmaterasuEffectStartedapplied",
       "type": "procedure",
       "sortid": 16,
@@ -234,63 +219,117 @@
       "path": "~/Procedures"
     },
     {
-      "name": "Amaterasu",
-      "type": "potioneffect",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "amaterasu",
-      "path": "~/Particles"
-    },
-    {
-      "name": "Jutsu1OnKeyPressed",
+      "name": "GryphonEntitySwingsItem",
       "type": "procedure",
-      "sortid": 18,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "jutsu_1_on_key_pressed",
+      "registry_name": "gryphon_entity_swings_item",
       "metadata": {
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
       "path": "~/Procedures"
     },
     {
-      "name": "Jutsu1",
-      "type": "keybind",
-      "sortid": 18,
+      "name": "GryphonToolInInventoryTick",
+      "type": "procedure",
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "jutsu_1",
-      "path": "~/Keybinds"
+      "registry_name": "gryphon_tool_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Slash",
+      "type": "rangeditem",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slash",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Skepslash",
+      "type": "rangeditem",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skepslash",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "BeeSlash",
+      "type": "rangeditem",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bee_slash",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "BeeKatana",
+      "type": "tool",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bee_katana",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "SkepKatana",
+      "type": "tool",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skep_katana",
+      "path": "~/Weapons"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "gryphoncooldown",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "itemGroup.tabpnw_armor": "PNW Armor",
-      "key.projectnewworld.jutsu_1": "Jutsu 1",
       "item.projectnewworld.lazer_arm_chestplate": "Lazer Arm",
-      "item.projectnewworld.sasuke_ms_chestplate": "Sasuke MS Body",
       "item.projectnewworld.lazer_arm_leggings": "Lazer Arm Leggings",
-      "item.projectnewworld.popgreen": "Popgreen",
-      "item.projectnewworld.golden_pole": "Golden Staff V1",
+      "item.projectnewworld.bee_katana": "Bee Katana",
       "item.projectnewworld.golden_pole_v_2": "Golden Staff V2",
-      "item.projectnewworld.sasuke_ms_helmet": "Sasuke MS",
-      "effect.amaterasu": "Amaterasu",
-      "item.projectnewworld.lazer_arm_boots": "Lazer Arm Boots",
-      "itemGroup.tabpnw_weapons": "PNW Weapons",
-      "item.projectnewworld.sasuke_ms_boots": "Sasuke MS Boots",
+      "item.projectnewworld.golden_pole": "Golden Staff V1",
       "item.projectnewworld.ussop_slingshot": "Kabuto",
       "item.projectnewworld.gryphon": "Gryphon",
-      "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet",
       "itemGroup.tabpnw_items": "PNW Items",
-      "item.projectnewworld.sasuke_ms_leggings": "Sasuke MS Leggings"
+      "itemGroup.tabpnw_armor": "PNW Armor",
+      "item.projectnewworld.skepslash": "Slash Gryphon",
+      "item.projectnewworld.popgreen": "Popgreen",
+      "item.projectnewworld.bee_slash": "Slash Bee",
+      "item.projectnewworld.skep_katana": "Skep Katana",
+      "item.projectnewworld.lazer_arm_boots": "Lazer Arm Boots",
+      "itemGroup.tabpnw_weapons": "PNW Weapons",
+      "item.projectnewworld.slash": "Slash Gryphon",
+      "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet"
     }
   },
   "foldersRoot": {

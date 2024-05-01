@@ -6,12 +6,12 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.world.World;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
-import net.minecraft.block.Blocks;
 
 import net.mcreator.projectnewworld.procedures.GryphonToolInInventoryTickProcedure;
 import net.mcreator.projectnewworld.procedures.GryphonEntitySwingsItemProcedure;
@@ -24,12 +24,12 @@ import java.util.HashMap;
 import java.util.AbstractMap;
 
 @ProjectnewworldModElements.ModElement.Tag
-public class GryphonItem extends ProjectnewworldModElements.ModElement {
-	@ObjectHolder("projectnewworld:gryphon")
+public class BeeKatanaItem extends ProjectnewworldModElements.ModElement {
+	@ObjectHolder("projectnewworld:bee_katana")
 	public static final Item block = null;
 
-	public GryphonItem(ProjectnewworldModElements instance) {
-		super(instance, 9);
+	public BeeKatanaItem(ProjectnewworldModElements instance) {
+		super(instance, 29);
 	}
 
 	@Override
@@ -56,7 +56,7 @@ public class GryphonItem extends ProjectnewworldModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(Blocks.IRON_BLOCK));
+				return Ingredient.fromStacks(new ItemStack(Items.DIAMOND));
 			}
 		}, 3, -2f, new Item.Properties().group(PNWWeaponsItemGroup.tab).isImmuneToFire()) {
 			@Override
@@ -83,6 +83,6 @@ public class GryphonItem extends ProjectnewworldModElements.ModElement {
 				GryphonToolInInventoryTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world)).collect(HashMap::new,
 						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
-		}.setRegistryName("gryphon"));
+		}.setRegistryName("bee_katana"));
 	}
 }

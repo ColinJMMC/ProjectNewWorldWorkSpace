@@ -3,9 +3,9 @@
   "_type": "tool",
   "definition": {
     "renderType": 1,
-    "texture": "gryphonitem",
-    "customModelName": "gryphon:default",
-    "name": "Gryphon",
+    "texture": "skepkatanaitem",
+    "customModelName": "skepskatana:default",
+    "name": "Skep Katana",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:PNWWeapons"
@@ -21,7 +21,7 @@
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": "Items.EMERALD"
       }
     ],
     "immuneToFire": true,
