@@ -9,7 +9,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.entity.player.PlayerEntity;
@@ -17,6 +16,7 @@ import net.minecraft.entity.LivingEntity;
 
 import net.mcreator.projectnewworld.procedures.GoldenPoleRightclickedProcedure;
 import net.mcreator.projectnewworld.procedures.GoldenPoleLivingEntityIsHitWithToolProcedure;
+import net.mcreator.projectnewworld.itemgroup.PNWWeaponsItemGroup;
 import net.mcreator.projectnewworld.ProjectnewworldModElements;
 
 import java.util.stream.Stream;
@@ -59,7 +59,7 @@ public class GoldenPoleItem extends ProjectnewworldModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -2.5f, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()) {
+		}, 3, -2.5f, new Item.Properties().group(PNWWeaponsItemGroup.tab).isImmuneToFire()) {
 			@Override
 			public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);

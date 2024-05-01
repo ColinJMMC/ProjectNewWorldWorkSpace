@@ -6,11 +6,11 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.block.Blocks;
 
+import net.mcreator.projectnewworld.itemgroup.PNWWeaponsItemGroup;
 import net.mcreator.projectnewworld.ProjectnewworldModElements;
 
 @ProjectnewworldModElements.ModElement.Tag
@@ -48,7 +48,7 @@ public class GryphonItem extends ProjectnewworldModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(Blocks.IRON_BLOCK));
 			}
-		}, 3, -2f, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()) {
+		}, 3, -2f, new Item.Properties().group(PNWWeaponsItemGroup.tab).isImmuneToFire()) {
 		}.setRegistryName("gryphon"));
 	}
 }

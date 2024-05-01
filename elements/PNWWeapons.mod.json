@@ -1,0 +1,11 @@
+{
+  "_fv": 33,
+  "_type": "tab",
+  "definition": {
+    "name": "PNW Weapons",
+    "icon": {
+      "value": "CUSTOM:GoldenPoleV2"
+    },
+    "showSearch": true
+  }
+}

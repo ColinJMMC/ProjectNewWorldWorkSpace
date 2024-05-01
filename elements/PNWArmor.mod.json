@@ -1,0 +1,11 @@
+{
+  "_fv": 33,
+  "_type": "tab",
+  "definition": {
+    "name": "PNW Armor",
+    "icon": {
+      "value": "CUSTOM:LazerArm.body"
+    },
+    "showSearch": true
+  }
+}

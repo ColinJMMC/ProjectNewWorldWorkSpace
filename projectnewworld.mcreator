@@ -141,17 +141,66 @@
       "locked_code": false,
       "registry_name": "gryphon",
       "path": "~/Weapons"
+    },
+    {
+      "name": "LazerArm",
+      "type": "armor",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lazer_arm",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "PNWArmor",
+      "type": "tab",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pnw_armor",
+      "path": "~/CreativeTabs"
+    },
+    {
+      "name": "PNWWeapons",
+      "type": "tab",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pnw_weapons",
+      "path": "~/CreativeTabs"
+    },
+    {
+      "name": "PNWItems",
+      "type": "tab",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pnw_items",
+      "path": "~/CreativeTabs"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.projectnewworld.ussop_slingshot": "Kabuto",
-      "item.projectnewworld.gryphon": "Gryphon",
+      "itemGroup.tabpnw_armor": "PNW Armor",
+      "item.projectnewworld.lazer_arm_chestplate": "Lazer Arm",
+      "item.projectnewworld.lazer_arm_leggings": "Lazer Arm Leggings",
       "item.projectnewworld.popgreen": "Popgreen",
       "item.projectnewworld.golden_pole": "Golden Staff V1",
-      "item.projectnewworld.golden_pole_v_2": "Golden Staff V2"
+      "item.projectnewworld.golden_pole_v_2": "Golden Staff V2",
+      "item.projectnewworld.lazer_arm_boots": "Lazer Arm Boots",
+      "itemGroup.tabpnw_weapons": "PNW Weapons",
+      "item.projectnewworld.ussop_slingshot": "Kabuto",
+      "item.projectnewworld.gryphon": "Gryphon",
+      "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet",
+      "itemGroup.tabpnw_items": "PNW Items"
     }
   },
   "foldersRoot": {
@@ -167,6 +216,14 @@
       },
       {
         "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "CreativeTabs",
         "children": []
       }
     ]

@@ -21,7 +21,6 @@ import net.minecraft.item.UseAction;
 import net.minecraft.item.ShootableItem;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -32,6 +31,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.projectnewworld.itemgroup.PNWWeaponsItemGroup;
 import net.mcreator.projectnewworld.entity.renderer.UssopSlingshotRenderer;
 import net.mcreator.projectnewworld.ProjectnewworldModElements;
 
@@ -58,7 +58,7 @@ public class UssopSlingshotItem extends ProjectnewworldModElements.ModElement {
 
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(100));
+			super(new Item.Properties().group(PNWWeaponsItemGroup.tab).maxDamage(100));
 			setRegistryName("ussop_slingshot");
 		}
 

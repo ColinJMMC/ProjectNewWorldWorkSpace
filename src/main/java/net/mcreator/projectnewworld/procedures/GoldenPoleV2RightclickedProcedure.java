@@ -6,6 +6,7 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.projectnewworld.item.GoldenPoleV2Item;
 import net.mcreator.projectnewworld.item.GoldenPoleItem;
 import net.mcreator.projectnewworld.ProjectnewworldMod;
 
@@ -21,12 +22,15 @@ public class GoldenPoleV2RightclickedProcedure {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity.isSneaking()) {
-			if (entity instanceof LivingEntity) {
-				ItemStack _setstack = new ItemStack(GoldenPoleItem.block);
-				_setstack.setCount((int) 1);
-				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
-				if (entity instanceof ServerPlayerEntity)
-					((ServerPlayerEntity) entity).inventory.markDirty();
+			if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+					.getItem() == GoldenPoleV2Item.block) {
+				if (entity instanceof LivingEntity) {
+					ItemStack _setstack = new ItemStack(GoldenPoleItem.block);
+					_setstack.setCount((int) 1);
+					((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+					if (entity instanceof ServerPlayerEntity)
+						((ServerPlayerEntity) entity).inventory.markDirty();
+				}
 			}
 		}
 	}
