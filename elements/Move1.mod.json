@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "V",
+    "keyBindingName": "Move 1",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "Move1OnKeyPressed"
+    }
+  }
+}

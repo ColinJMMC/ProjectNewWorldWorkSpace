@@ -1,0 +1,57 @@
+{
+  "_fv": 33,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGH",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "new_piskel.png",
+          "use1Xscale": false,
+          "name": "new_piskel.png",
+          "x": 8,
+          "y": 7
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Move 1",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "Move 1",
+          "x": 42,
+          "y": 19
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Move 2",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "Move 2",
+          "x": 42,
+          "y": 46
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "KabutoDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

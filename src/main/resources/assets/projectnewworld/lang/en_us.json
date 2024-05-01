@@ -14,7 +14,10 @@
   "item.projectnewworld.slash": "Slash Gryphon",
   "item.projectnewworld.light_sword": "Light Sword",
   "item.projectnewworld.ussop_slingshot": "Kabuto",
+  "key.projectnewworld.move_1": "Move 1",
   "item.projectnewworld.gryphon": "Gryphon",
   "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet",
-  "itemGroup.tabpnw_items": "PNW Items"
+  "key.projectnewworld.move_2": "Move 2",
+  "itemGroup.tabpnw_items": "PNW Items",
+  "item.projectnewworld.tnt_pallet": "Tnt Pallet"
 }

@@ -305,6 +305,123 @@
       "locked_code": false,
       "registry_name": "light_sword",
       "path": "~/Weapons"
+    },
+    {
+      "name": "Kabuto",
+      "type": "overlay",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kabuto",
+      "path": "~/GUIs"
+    },
+    {
+      "name": "KabutoDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kabuto_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Move1",
+      "type": "keybind",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_1",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "Move2",
+      "type": "keybind",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_2",
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "TntPalletProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_pallet_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "TntPallet",
+      "type": "rangeditem",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_pallet",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Move1OnKeyPressed",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_1_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Move2OnKeyPressed",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_2_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -333,9 +450,12 @@
       "item.projectnewworld.slash": "Slash Gryphon",
       "item.projectnewworld.light_sword": "Light Sword",
       "item.projectnewworld.ussop_slingshot": "Kabuto",
+      "key.projectnewworld.move_1": "Move 1",
       "item.projectnewworld.gryphon": "Gryphon",
       "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet",
-      "itemGroup.tabpnw_items": "PNW Items"
+      "key.projectnewworld.move_2": "Move 2",
+      "itemGroup.tabpnw_items": "PNW Items",
+      "item.projectnewworld.tnt_pallet": "Tnt Pallet"
     }
   },
   "foldersRoot": {
@@ -367,6 +487,10 @@
       },
       {
         "name": "Keybinds",
+        "children": []
+      },
+      {
+        "name": "GUIs",
         "children": []
       }
     ]
