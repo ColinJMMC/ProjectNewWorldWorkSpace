@@ -1,19 +1,20 @@
 {
+  "itemGroup.tabpnw_armor": "PNW Armor",
   "item.projectnewworld.lazer_arm_chestplate": "Lazer Arm",
   "item.projectnewworld.lazer_arm_leggings": "Lazer Arm Leggings",
   "item.projectnewworld.bee_katana": "Bee Katana",
+  "item.projectnewworld.skepslash": "Slash Gryphon",
   "item.projectnewworld.golden_pole_v_2": "Golden Staff V2",
   "item.projectnewworld.golden_pole": "Golden Staff V1",
-  "item.projectnewworld.ussop_slingshot": "Kabuto",
-  "item.projectnewworld.gryphon": "Gryphon",
-  "itemGroup.tabpnw_items": "PNW Items",
-  "itemGroup.tabpnw_armor": "PNW Armor",
-  "item.projectnewworld.skepslash": "Slash Gryphon",
   "item.projectnewworld.popgreen": "Popgreen",
   "item.projectnewworld.bee_slash": "Slash Bee",
   "item.projectnewworld.skep_katana": "Skep Katana",
   "item.projectnewworld.lazer_arm_boots": "Lazer Arm Boots",
   "itemGroup.tabpnw_weapons": "PNW Weapons",
   "item.projectnewworld.slash": "Slash Gryphon",
-  "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet"
+  "item.projectnewworld.light_sword": "Light Sword",
+  "item.projectnewworld.ussop_slingshot": "Kabuto",
+  "item.projectnewworld.gryphon": "Gryphon",
+  "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet",
+  "itemGroup.tabpnw_items": "PNW Items"
 }

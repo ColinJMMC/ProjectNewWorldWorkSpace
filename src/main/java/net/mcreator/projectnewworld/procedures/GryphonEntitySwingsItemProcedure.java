@@ -1,7 +1,6 @@
 package net.mcreator.projectnewworld.procedures;
 
 import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
@@ -22,20 +21,15 @@ import java.util.Map;
 public class GryphonEntitySwingsItemProcedure {
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("world") == null) {
-			if (!dependencies.containsKey("world"))
-				ProjectnewworldMod.LOGGER.warn("Failed to load dependency world for procedure GryphonEntitySwingsItem!");
-			return;
-		}
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
 				ProjectnewworldMod.LOGGER.warn("Failed to load dependency entity for procedure GryphonEntitySwingsItem!");
 			return;
 		}
-		IWorld world = (IWorld) dependencies.get("world");
 		Entity entity = (Entity) dependencies.get("entity");
 		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == GryphonItem.block) {
-			if (ProjectnewworldModVariables.WorldVariables.get(world).gryphoncooldown == 0) {
+			if ((entity.getCapability(ProjectnewworldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ProjectnewworldModVariables.PlayerVariables())).gryphoncooldown == 0) {
 				{
 					Entity _shootFrom = entity;
 					World projectileLevel = _shootFrom.world;
@@ -56,12 +50,18 @@ public class GryphonEntitySwingsItemProcedure {
 						projectileLevel.addEntity(_entityToSpawn);
 					}
 				}
-				ProjectnewworldModVariables.WorldVariables.get(world).gryphoncooldown = (-60);
-				ProjectnewworldModVariables.WorldVariables.get(world).syncData(world);
+				{
+					double _setval = (-60);
+					entity.getCapability(ProjectnewworldModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.gryphoncooldown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 		}
 		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == BeeKatanaItem.block) {
-			if (ProjectnewworldModVariables.WorldVariables.get(world).gryphoncooldown == 0) {
+			if ((entity.getCapability(ProjectnewworldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ProjectnewworldModVariables.PlayerVariables())).gryphoncooldown == 0) {
 				{
 					Entity _shootFrom = entity;
 					World projectileLevel = _shootFrom.world;
@@ -82,12 +82,18 @@ public class GryphonEntitySwingsItemProcedure {
 						projectileLevel.addEntity(_entityToSpawn);
 					}
 				}
-				ProjectnewworldModVariables.WorldVariables.get(world).gryphoncooldown = (-60);
-				ProjectnewworldModVariables.WorldVariables.get(world).syncData(world);
+				{
+					double _setval = (-60);
+					entity.getCapability(ProjectnewworldModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.gryphoncooldown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 		}
 		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == SkepKatanaItem.block) {
-			if (ProjectnewworldModVariables.WorldVariables.get(world).gryphoncooldown == 0) {
+			if ((entity.getCapability(ProjectnewworldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ProjectnewworldModVariables.PlayerVariables())).gryphoncooldown == 0) {
 				{
 					Entity _shootFrom = entity;
 					World projectileLevel = _shootFrom.world;
@@ -108,8 +114,13 @@ public class GryphonEntitySwingsItemProcedure {
 						projectileLevel.addEntity(_entityToSpawn);
 					}
 				}
-				ProjectnewworldModVariables.WorldVariables.get(world).gryphoncooldown = (-60);
-				ProjectnewworldModVariables.WorldVariables.get(world).syncData(world);
+				{
+					double _setval = (-60);
+					entity.getCapability(ProjectnewworldModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.gryphoncooldown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 		}
 	}

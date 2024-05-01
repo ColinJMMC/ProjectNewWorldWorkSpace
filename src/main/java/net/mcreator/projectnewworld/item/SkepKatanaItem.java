@@ -67,9 +67,8 @@ public class SkepKatanaItem extends ProjectnewworldModElements.ModElement {
 				double z = entity.getPosZ();
 				World world = entity.world;
 
-				GryphonEntitySwingsItemProcedure
-						.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("entity", entity))
-								.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+				GryphonEntitySwingsItemProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 				return retval;
 			}
 
@@ -80,7 +79,7 @@ public class SkepKatanaItem extends ProjectnewworldModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 
-				GryphonToolInInventoryTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("world", world)).collect(HashMap::new,
+				GryphonToolInInventoryTickProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 						(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			}
 		}.setRegistryName("skep_katana"));
