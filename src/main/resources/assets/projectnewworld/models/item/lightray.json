@@ -1,0 +1,7 @@
+{
+  "parent": "projectnewworld:custom/lightblade",
+  "textures": {
+    "0": "projectnewworld:blocks/lightsword",
+    "particle": "projectnewworld:items/goldenpoleitem"
+  }
+}

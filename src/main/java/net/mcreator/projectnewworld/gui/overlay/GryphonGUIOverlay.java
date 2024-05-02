@@ -13,9 +13,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.projectnewworld.procedures.KabutoDisplayOverlayIngameProcedure;
 import net.mcreator.projectnewworld.procedures.KabutoDisplayMove2CDProcedure;
 import net.mcreator.projectnewworld.procedures.KabutoDisplayMove1CDProcedure;
+import net.mcreator.projectnewworld.procedures.GryphonGUIDisplayProcedure;
 
 import java.util.stream.Stream;
 import java.util.Map;
@@ -26,7 +26,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 
 @Mod.EventBusSubscriber
-public class KabutoOverlay {
+public class GryphonGUIOverlay {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent(priority = EventPriority.HIGH)
 	public static void eventHandler(RenderGameOverlayEvent.Post event) {
@@ -56,9 +56,9 @@ public class KabutoOverlay {
 					GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 			RenderSystem.disableAlphaTest();
-			if (KabutoDisplayOverlayIngameProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+			if (GryphonGUIDisplayProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
 					(_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
-				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("projectnewworld:textures/screens/kabuto.png"));
+				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("projectnewworld:textures/screens/gryphon.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -64, posY + -114, 0, 0, 128, 64, 128, 64);
 
 				if (KabutoDisplayMove1CDProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,

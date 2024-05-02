@@ -7,9 +7,9 @@
       {
         "type": "image",
         "data": {
-          "image": "kabuto.png",
+          "image": "lightsword.png",
           "use1Xscale": false,
-          "name": "kabuto.png",
+          "name": "lightsword.png",
           "x": 149,
           "y": 6
         }
@@ -44,7 +44,7 @@
     "baseTexture": "",
     "overlayTarget": "Ingame",
     "displayCondition": {
-      "name": "KabutoDisplayOverlayIngame"
+      "name": "LightSwordDisplayInGame"
     },
     "gridSettings": {
       "sx": 18,

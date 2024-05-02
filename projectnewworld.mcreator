@@ -401,6 +401,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -422,6 +426,254 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "Move1tick",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "move_1tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "KabutoDisplayMove1CD",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kabuto_display_move_1_cd",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "KabutoDisplayMove2CD",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kabuto_display_move_2_cd",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "LightSwordGUI",
+      "type": "overlay",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_sword_gui",
+      "path": "~/GUIs"
+    },
+    {
+      "name": "LightSwordDisplayInGame",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_sword_display_in_game",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "LightrayProjectileHitsPlayer",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightray_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Lightray",
+      "type": "rangeditem",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightray",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Air",
+      "type": "tag",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air",
+      "path": "~/tags"
+    },
+    {
+      "name": "TpLightRayProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_light_ray_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "TpLightRay",
+      "type": "rangeditem",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_light_ray",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Gryphonbarrage",
+      "type": "rangeditem",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gryphonbarrage",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "Gryphonbarrage1",
+      "type": "rangeditem",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gryphonbarrage_1",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GryphonGUI",
+      "type": "overlay",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gryphon_gui",
+      "path": "~/GUIs"
+    },
+    {
+      "name": "GryphonGUIDisplay",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gryphon_gui_display",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Giantslash",
+      "type": "rangeditem",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giantslash",
+      "path": "~/Weapons"
+    },
+    {
+      "name": "GiantslashProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giantslash_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons"
     }
   ],
   "variable_elements": [
@@ -430,18 +682,39 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "move1cd",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "move2cd",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "itemGroup.tabpnw_armor": "PNW Armor",
       "item.projectnewworld.lazer_arm_chestplate": "Lazer Arm",
       "item.projectnewworld.lazer_arm_leggings": "Lazer Arm Leggings",
       "item.projectnewworld.bee_katana": "Bee Katana",
-      "item.projectnewworld.skepslash": "Slash Gryphon",
-      "item.projectnewworld.golden_pole_v_2": "Golden Staff V2",
       "item.projectnewworld.golden_pole": "Golden Staff V1",
+      "item.projectnewworld.golden_pole_v_2": "Golden Staff V2",
+      "item.projectnewworld.lightray": "Lightray",
+      "item.projectnewworld.ussop_slingshot": "Kabuto",
+      "key.projectnewworld.move_1": "Move 1",
+      "item.projectnewworld.gryphon": "Gryphon",
+      "key.projectnewworld.move_2": "Move 2",
+      "itemGroup.tabpnw_items": "PNW Items",
+      "item.projectnewworld.tnt_pallet": "Tnt Pallet",
+      "item.projectnewworld.gryphonbarrage_1": "Gryphonbarrage",
+      "itemGroup.tabpnw_armor": "PNW Armor",
+      "item.projectnewworld.tp_light_ray": "Tp Light Ray",
+      "item.projectnewworld.skepslash": "Slash Gryphon",
       "item.projectnewworld.popgreen": "Popgreen",
       "item.projectnewworld.bee_slash": "Slash Bee",
       "item.projectnewworld.skep_katana": "Skep Katana",
@@ -449,13 +722,9 @@
       "itemGroup.tabpnw_weapons": "PNW Weapons",
       "item.projectnewworld.slash": "Slash Gryphon",
       "item.projectnewworld.light_sword": "Light Sword",
-      "item.projectnewworld.ussop_slingshot": "Kabuto",
-      "key.projectnewworld.move_1": "Move 1",
-      "item.projectnewworld.gryphon": "Gryphon",
-      "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet",
-      "key.projectnewworld.move_2": "Move 2",
-      "itemGroup.tabpnw_items": "PNW Items",
-      "item.projectnewworld.tnt_pallet": "Tnt Pallet"
+      "item.projectnewworld.gryphonbarrage": "Gryphonbarrage",
+      "item.projectnewworld.giantslash": "Gryphonslash",
+      "item.projectnewworld.lazer_arm_helmet": "Lazer Arm Helmet"
     }
   },
   "foldersRoot": {
@@ -491,6 +760,10 @@
       },
       {
         "name": "GUIs",
+        "children": []
+      },
+      {
+        "name": "tags",
         "children": []
       }
     ]

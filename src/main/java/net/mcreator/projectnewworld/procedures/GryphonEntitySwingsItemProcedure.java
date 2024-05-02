@@ -29,7 +29,7 @@ public class GryphonEntitySwingsItemProcedure {
 		Entity entity = (Entity) dependencies.get("entity");
 		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == GryphonItem.block) {
 			if ((entity.getCapability(ProjectnewworldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ProjectnewworldModVariables.PlayerVariables())).gryphoncooldown == 0) {
+					.orElse(new ProjectnewworldModVariables.PlayerVariables())).gryphoncooldown >= 0) {
 				{
 					Entity _shootFrom = entity;
 					World projectileLevel = _shootFrom.world;
@@ -61,7 +61,7 @@ public class GryphonEntitySwingsItemProcedure {
 		}
 		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == BeeKatanaItem.block) {
 			if ((entity.getCapability(ProjectnewworldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ProjectnewworldModVariables.PlayerVariables())).gryphoncooldown == 0) {
+					.orElse(new ProjectnewworldModVariables.PlayerVariables())).gryphoncooldown >= 0) {
 				{
 					Entity _shootFrom = entity;
 					World projectileLevel = _shootFrom.world;
@@ -93,7 +93,7 @@ public class GryphonEntitySwingsItemProcedure {
 		}
 		if (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == SkepKatanaItem.block) {
 			if ((entity.getCapability(ProjectnewworldModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ProjectnewworldModVariables.PlayerVariables())).gryphoncooldown == 0) {
+					.orElse(new ProjectnewworldModVariables.PlayerVariables())).gryphoncooldown >= 0) {
 				{
 					Entity _shootFrom = entity;
 					World projectileLevel = _shootFrom.world;

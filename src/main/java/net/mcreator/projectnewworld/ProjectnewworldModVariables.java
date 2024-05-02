@@ -72,6 +72,8 @@ public class ProjectnewworldModVariables {
 		public INBT writeNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side) {
 			CompoundNBT nbt = new CompoundNBT();
 			nbt.putDouble("gryphoncooldown", instance.gryphoncooldown);
+			nbt.putDouble("move1cd", instance.move1cd);
+			nbt.putDouble("move2cd", instance.move2cd);
 			return nbt;
 		}
 
@@ -79,11 +81,15 @@ public class ProjectnewworldModVariables {
 		public void readNBT(Capability<PlayerVariables> capability, PlayerVariables instance, Direction side, INBT inbt) {
 			CompoundNBT nbt = (CompoundNBT) inbt;
 			instance.gryphoncooldown = nbt.getDouble("gryphoncooldown");
+			instance.move1cd = nbt.getDouble("move1cd");
+			instance.move2cd = nbt.getDouble("move2cd");
 		}
 	}
 
 	public static class PlayerVariables {
 		public double gryphoncooldown = 0;
+		public double move1cd = 0;
+		public double move2cd = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
@@ -120,6 +126,8 @@ public class ProjectnewworldModVariables {
 		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 		if (!event.isWasDeath()) {
 			clone.gryphoncooldown = original.gryphoncooldown;
+			clone.move1cd = original.move1cd;
+			clone.move2cd = original.move2cd;
 		}
 	}
 
@@ -146,6 +154,8 @@ public class ProjectnewworldModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
 					variables.gryphoncooldown = message.data.gryphoncooldown;
+					variables.move1cd = message.data.move1cd;
+					variables.move2cd = message.data.move2cd;
 				}
 			});
 			context.setPacketHandled(true);
